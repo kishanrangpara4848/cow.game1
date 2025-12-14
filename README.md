@@ -1,1 +1,1 @@
-# cow.game1
+# cow.game
