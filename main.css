@@ -1,0 +1,601 @@
+@font-face {
+    font-family: "DINPro-Medium";
+    src: url("../DINPro-Medium.otf") format("otf"), url("../DINPro-Medium.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "DINPro-Medium", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #edbfbf;
+    overflow-x: hidden;
+    background-color: rgba(49, 1, 1, 1);
+}
+
+.welcome-desc {
+    line-height: 1.6rem;
+}
+
+.welcome-btn button:hover {
+    background-color: #d40016;
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+    .container {
+        position: relative;
+        width: calc(50vw -10px);
+    }
+
+
+
+    .pc-head {
+        display: none;
+    }
+
+    .wap-head {
+        display: flex;
+        background-repeat: repeat-x;
+        background-image: url(./img/header_bg.png);
+    }
+
+    .head-logo {
+        width: 100%;
+        height: 7vh;
+        background-size: 42%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: left 4vw center;
+        background-image: url(./img/icons.png);
+        z-index: 10;
+    }
+
+    .head-btn {
+        display: none;
+    }
+
+    .pc-tab-content {
+        display: none;
+    }
+
+    .wap-tab-content {
+        display: block;
+    }
+
+    .body-welcome {
+        height: 100vh;
+        padding: 1vh 4vw;
+    }
+
+    .body-welcome-txt {
+        height: 50vh;
+        margin-top: 4vh;
+    }
+
+    .welcome-txt-head {
+        font-size: 1rem;
+        color: #eff4f3;
+        position: relative;
+        letter-spacing: 1px;
+        padding: 0 6vw;
+    }
+
+    .welcome-panel {
+        top: 46vh;
+        line-height: 3vh;
+        font-size: 1rem;
+        color: #cdc3c4;
+        position: relative;
+        letter-spacing: 1px;
+    }
+
+    .welcome-logo {
+        height: 12vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 5px;
+        background-image: url(./img/welcome_h5.png);
+    }
+
+    .welcome-panel .welcome-txt {
+        position: relative;
+        top: 4vh;
+        bottom: 0;
+    }
+
+    .welcome-btn button {
+        width: calc(100% - 1px);
+        display: block;
+        margin-top: 2vh;
+        color: #edd8d7;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1vh;
+        padding: 2vh 0;
+        padding-left: 16vw;
+        cursor: pointer;
+        border-radius: 3rem;
+        border: 1px solid #f7d462;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: left 4vw center, right 4vw center;
+    }
+
+
+    .btn-googleplay {
+        background-size: 3cqb, 2cqb;
+        background-repeat: no-repeat, no-repeat;
+        background-image: url(./img/logo_android.png), url(./img/logo_jiantou.png);
+    }
+
+    .btn-appstore {
+        display: inline-block;
+        background-size: 3cqb, 2cqb;
+        background-repeat: no-repeat, no-repeat;
+        background-image: url(./img/logo_apple.png), url(./img/logo_jiantou.png);
+    }
+
+    .game-btn {
+        padding: 6px 0;
+        text-align: center;
+        letter-spacing: 2vw;
+        background-color: #590001;
+    }
+
+    .game-btn img {
+        width: 10%;
+        vertical-align: middle;
+    }
+
+    .tab-footer {
+        border-bottom: 1px solid sandybrown;
+    }
+
+    .panel-content {
+        text-align: center;
+    }
+
+    .products-text {
+        display: flex;
+        font-size: 1rem;
+        margin: 6vh 4vw;
+        text-align: left;
+        border-radius: 1rem;
+    }
+
+    .products-text-left:nth-child(1) {
+        /* background: linear-gradient(to right, rgb(57, 10, 9), rgba(47, 10, 9, 0)); */
+        background: linear-gradient(to right, rgb(63, 5, 6), rgba(49, 0, 1, 0));
+    }
+
+    .products-text-left:nth-child(2) {
+        /* background: linear-gradient(to left, rgb(57, 10, 9), rgba(47, 10, 9, 0)); */
+        background: linear-gradient(to left, rgb(63, 5, 6), rgba(49, 0, 1, 0));
+    }
+
+    .product-game {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_shoubing.png);
+        background-position: right center;
+        border: 1px yellow;
+    }
+
+    .product-jiangbei {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_jiangbei.png);
+        background-position: right center;
+    }
+
+    .product-zhuanpan {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_zhuanpan.png);
+        background-position: right center;
+        border: 1px yellow;
+    }
+
+    .product-lihe {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_lihe.png);
+        background-position: right center;
+    }
+
+    .products-text-left {
+        width: 70%;
+        padding: 1 2vw;
+    }
+
+    .products-text-left:nth-of-type(1) {
+        text-align: left;
+        font-size: 1rem;
+        display: flex;
+        padding: 1vh 3vw;
+        border-radius: 1rem;
+    }
+
+    .products-text-left:nth-of-type(2) {
+        text-align: left;
+        font-size: 1rem;
+        display: flex;
+        padding: 1vh 2vw;
+        border-radius: 1rem;
+    }
+
+    .products-text-right {
+        width: 25vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .products-text dl dt {
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.3rem;
+    }
+
+    .products-text dl dd {
+        margin-top: 2vh;
+        color: #9b5659;
+        margin-left: 0;
+        font-size: 15px;
+        line-height: 1.25rem;
+    }
+
+    .products-title {
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        display: block;
+        font-size: 25pt;
+        color: rgb(255, 236, 104);
+        background-size: 15vw;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(./img/tab_active.png);
+    }
+
+    .footer {
+        line-height: 6vh;
+        font-size: 0.7rem;
+        text-align: center;
+        background-color: rgb(63, 4, 6);
+        color: rgba(113, 57, 58, 0.8);
+    }
+
+    .tabs {
+        display: flex;
+        height: 100%;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .tab {
+        width: 6vw;
+        padding-top: 1vh;
+        line-height: 5vh;
+    }
+
+    .tab:hover {
+        color: rgb(112, 112, 112);
+    }
+
+    .tab.active {
+        display: block;
+        /* color: rgb(237, 153, 40); */
+        color: #ffe25c;
+        font-weight: 400;
+        font-weight: lighter;
+        text-decoration: underline;
+        font-size: 26px;
+        text-decoration-style: solid;
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 0.2rem;
+        text-decoration-color: rgb(237, 153, 40);
+        border-bottom-left-radius: 20px;
+    }
+
+    .tab-content {
+        /* border: 1px solid rgb(117, 46, 139); */
+        text-align: center;
+    }
+
+    .content {
+        padding-top: 2vh;
+        background-size: cover;
+        background-color: #331212;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(./img/download.png);
+    }
+
+    .content.active {
+        display: block;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: calc(100vw -10px);
+    }
+
+    .wap-head {
+        display: none;
+    }
+
+    .pc-head {
+        display: flex;
+        background-repeat: repeat-x;
+        background-image: url(./img/header_bg.png);
+        /* background-color: rgb(192, 0, 16); */
+        height: 53px;
+    }
+
+    .head-logo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position: center;
+    background-image: url(./img/icons.png);
+    z-index: 10;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    .wap-tab-content {
+        display: none;
+    }
+
+    .body-welcome {
+        height: 70vh;
+        /* padding: 1vh 10vw; */
+        padding: 4vh 2vw;
+    }
+
+    .body-welcome-txt {
+        height: 30vh;
+        margin-top: 4vh;
+        margin-bottom: 3rem;
+        padding-left: 8px;
+    }
+
+    .welcome-txt {
+        width: 36vw;
+        color: #dbabaa;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .welcome-desc {
+        width: 35vw;
+        color: #dbabaa;
+        font-size: 15px;
+        line-height: 1.5rem;
+    }
+
+    .welcome-btn {
+        margin-top: 0vh;
+        padding-bottom: 1vh;
+    }
+
+    .welcome-btn button {
+        width: 27vw;
+        display: block;
+        margin-top: 2vh;
+        color: #edd8d7;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        line-height: 4vh;
+        padding: 2.5vh 3vw;
+        border-radius: 3rem;
+        border: 2px solid #f7d462;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: left 1vw center, right 1vw center;
+    }
+
+    .btn-appstore {
+        display: inline-block;
+        background-size: 2cqb, 1.5cqb;
+        background-repeat: no-repeat, no-repeat;
+        background-image: url(./img/logo_apple.png), url(./img/logo_jiantou.png);
+    }
+
+    .btn-googleplay {
+        background-size: 2cqb, 1.5cqb;
+        background-repeat: no-repeat, no-repeat;
+        background-image: url(./img/logo_android.png), url(./img/logo_jiantou.png);
+    }
+
+    .btn-boxnow {
+        background-size: 2cqb, 1.5cqb;
+        background-repeat: no-repeat, no-repeat;
+        background-image: url(./img/logo.png), url(./img/logo_jiantou.png);
+    }
+
+    .game-btn {
+        border: 0px;
+        padding: 9px 0;
+        text-align: center;
+        letter-spacing: 5.3vw;
+        background-image: url(./img/logo_bg.png);
+    }
+
+    .game-btn img {
+        vertical-align: middle;
+        height: 60px;
+    }
+
+    .tab-footer {
+        border-bottom: 1px solid sandybrown;
+        /* height: 1px; background: linear-gradient( to bottom, rgba(234, 231, 112, 1) rgba(233, 231, 197, 1) rgba(233, 231, 197, 1) rgba(233, 231, 197, 1) rgba(234, 231, 118, 1) ); */
+    }
+
+    .panel-content {
+        text-align: center;
+        /* background-color: rgb(57, 10, 9); */
+        background-color: rgb(44, 10, 2);
+    }
+
+    .products-title {
+        padding: 3vh 0;
+        display: block;
+        font-size: 50px;
+        color: rgb(255, 236, 104);
+        background-size: 5vw;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(./img/tab_active.png);
+    }
+
+    .products-text {
+        display: flex;
+        height: 34vh;
+        text-align: left;
+        padding: 4vh 20vw;
+        border-radius: 1rem;
+    }
+
+    .products-text-left:nth-child(1) {
+        background: linear-gradient(to right, rgb(57, 10, 9), rgba(47, 10, 9, 0));
+    }
+
+    .products-text-left:nth-child(2) {
+        background: linear-gradient(to left, rgb(57, 10, 9), rgba(47, 10, 9, 0));
+    }
+
+    .product-game {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_shoubing.png);
+        background-position: right center;
+    }
+
+    .product-jiangbei {
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_jiangbei.png);
+        background-position: right center;
+    }
+
+    .product-zhuanpan {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_zhuanpan.png);
+        background-position: right center;
+        border: 1px yellow;
+    }
+
+    .product-lihe {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./img/panel_lihe.png);
+        background-position: right center;
+    }
+
+    .products-text-left:nth-of-type(1) {
+        text-align: left;
+        font-size: 1rem;
+        display: flex;
+        padding: 2vh 2vw;
+        border-radius: 1rem;
+    }
+
+    .products-text-left:nth-of-type(2) {
+        text-align: left;
+        font-size: 1rem;
+        display: flex;
+        padding: 1vh 2vw;
+        border-radius: 1rem;
+    }
+
+    .products-text-right {
+        width: 25vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .products-text dl dt {
+        padding: 1rem 0px;
+        line-height: 2rem;
+        font-size: 26px;
+        color: white;
+    }
+
+    .products-text dl dd {
+        color: #9b5659;
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    .footer {
+        text-align: center;
+        line-height: 3rem;
+        background-color: rgb(63, 4, 6);
+        color: rgba(113, 57, 58, 0.8);
+    }
+
+    .tabs {
+        display: flex;
+        height: 100%;
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+        align-items: baseline;
+        gap: 1rem;
+        margin-left: 14vw;
+    }
+
+    .tab {
+        width: 8vw;
+        line-height: 6vh;
+        letter-spacing: 2px;
+    }
+
+    .tab:hover {
+        color: rgb(112, 112, 112);
+    }
+
+    .tab.active {
+        display: block;
+        width: 7vw;
+        font-weight: 400;
+        color: #ffe25c;
+        font-size: 26px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(./img/tab_active.png);
+    }
+
+    .tab-content {
+        background-size: cover;
+        height: 31rem;
+        background-color: #331212;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(img/zhutu_pc.png);
+    }
+
+    .tab-footer {
+        border-radius: 1px;
+        border-bottom: 2px solid sandybrown;
+    }
+
+    .tab-footer .wap-tab-content {
+        display: block;
+    }
+
+    .tab-footer .pc-tab-content {
+        display: none;
+    }
+}
